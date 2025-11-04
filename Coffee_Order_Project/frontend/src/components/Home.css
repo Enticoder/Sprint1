@@ -1,0 +1,147 @@
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 0; Remove padding to allow full screen */
+}
+
+/* Navigation styles are defined in Navigation.css; removed duplicate navbar rules here */
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a3429;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcome-text {
+  color: #4a3429;
+  font-weight: 500;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 800px;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn.primary {
+  background-color: #c7916f;
+  color: white;
+  border: none;
+}
+
+.btn.primary:hover {
+  background-color: #a67759;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn.secondary:hover {
+  background-color: white;
+  color: #4a3429;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.feature {
+  text-align: center;
+  padding: 2rem;
+}
+
+.feature .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature h2 {
+  color: #4a3429;
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .welcome-text {
+    display: none;
+  }
+}
